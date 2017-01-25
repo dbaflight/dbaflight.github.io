@@ -84,25 +84,12 @@
 
 
 
-<meta name="description" content="iOS1 . 请注意选择 L2TP (而不是 IPSec ) 作为 VPN 类型。2 . 确保已经勾选 发送所有流量
-Windows 1 . 在首次连接之前可能需要 更改注册表，以解决 VPN 服务器和客户端与 NAT （比如家用路由器）的兼容问题。修改后请重启电脑。
-Windows XP： 
-运行 regedit 找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentCont">
-<meta property="og:type" content="article">
-<meta property="og:title" content="VPN 故障排查">
-<meta property="og:url" content="https://imyzy.com/vpntroubleshooting/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yang Ziyi">
+<meta property="og:url" content="https://imyzy.com/archives/2017/index.html">
 <meta property="og:site_name" content="Yang Ziyi">
-<meta property="og:description" content="iOS1 . 请注意选择 L2TP (而不是 IPSec ) 作为 VPN 类型。2 . 确保已经勾选 发送所有流量
-Windows 1 . 在首次连接之前可能需要 更改注册表，以解决 VPN 服务器和客户端与 NAT （比如家用路由器）的兼容问题。修改后请重启电脑。
-Windows XP： 
-运行 regedit 找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentCont">
-<meta property="og:updated_time" content="2017-01-24T06:02:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VPN 故障排查">
-<meta name="twitter:description" content="iOS1 . 请注意选择 L2TP (而不是 IPSec ) 作为 VPN 类型。2 . 确保已经勾选 发送所有流量
-Windows 1 . 在首次连接之前可能需要 更改注册表，以解决 VPN 服务器和客户端与 NAT （比如家用路由器）的兼容问题。修改后请重启电脑。
-Windows XP： 
-运行 regedit 找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentCont">
+<meta name="twitter:title" content="Yang Ziyi">
 
 
 
@@ -130,13 +117,13 @@ Windows XP：
 
 
 
-  <link rel="canonical" href="https://imyzy.com/vpntroubleshooting/"/>
+  <link rel="canonical" href="https://imyzy.com/archives/2017/"/>
 
 
 
 
 
-  <title> VPN 故障排查 | Yang Ziyi </title>
+  <title> 归档 | Yang Ziyi </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -157,7 +144,7 @@ Windows XP：
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -219,155 +206,66 @@ Windows XP：
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://imyzy.com/vpntroubleshooting/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Yang">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Yang Ziyi">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Yang Ziyi" src="">
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      嗯..! 目前共计 20 篇日志。 继续努力。
     </span>
-  </span>
 
     
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                VPN 故障排查
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-02T01:54:20+08:00">
-                2016-05-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
 
       
       
-
       
-        <a id="more"></a>
-<p><b>iOS</b><br>1 . 请注意选择 <code>L2TP</code> (而不是 <code>IPSec</code> ) 作为 VPN 类型。<br>2 . 确保已经勾选 <code>发送所有流量</code></p>
-<p><b>Windows</b><br> 1 . 在首次连接之前可能需要 <code>更改注册表</code>，以解决 VPN 服务器和客户端与 NAT （比如家用路由器）的兼容问题。修改后请重启电脑。</p>
-<pre><code>Windows XP： 
-运行 regedit 找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IPSec 右键-添加名为 AssumeUDPEncapsulationContextOnSendRule 类型为: DWORD 值: 2 的项目。
 
-Windows vista/7/8/10/server 2008/server 2012/serer 2016： 
-运行 regedit 找到 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent  右键-添加名为 AssumeUDPEncapsulationContextOnSendRule 类型为: DWORD 值: 2 的项目。
-</code></pre><p>2 . 如果遇到 <code>Error 628</code> ，请打开 VPN 连接属性的”安全”选项卡，启用 <code>CHAP</code> 选项并禁用 <code>MS-CHAP v2</code> 。</p>
-
-      
-    </div>
-
-    <div>
       
         
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/404/" rel="next" title="公益 404">
-                <i class="fa fa-chevron-left"></i> 公益 404
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/anatokyo/" rel="prev" title="全日空羽田机场见学记录">
-                全日空羽田机场见学记录 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
         </div>
       
+      
 
       
-      
-    </footer>
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/mcserver/" itemprop="url">
+              
+                <span itemprop="name">DB Minecraft Server</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-01-13T15:16:20+08:00"
+              content="2017-01-13" >
+          01-13
+        </time>
+      </div>
+
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+    
+
+  </section>
+
+  
+
 
           
           </div>
@@ -375,10 +273,6 @@ Windows vista/7/8/10/server 2008/server 2012/serer 2016：
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -544,9 +438,11 @@ Windows vista/7/8/10/server 2008/server 2012/serer 2016：
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
 
 
   
@@ -579,10 +475,6 @@ Windows vista/7/8/10/server 2008/server 2012/serer 2016：
 
   
 
-  
-      <!-- UY BEGIN -->
-      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="></script>
-      <!-- UY END -->
   
 
 
